@@ -1,5 +1,5 @@
 import React from "react";
-import {Route,NavLink,HashRouter} from "react-router-dom";
+import {Route,NavLink,BrowserRouter} from "react-router-dom";
 import Home from "./Home";
 import Courses from "./Courses";
 import Contact from "./Contact";
@@ -7,7 +7,7 @@ import Contact from "./Contact";
 class Main extends React.Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div>
           <h1>IADT Single Page App (SPA)</h1>
           <ul className="header">
@@ -21,7 +21,7 @@ class Main extends React.Component {
             <Route path="/contact" component={Contact}/>
           </div>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
